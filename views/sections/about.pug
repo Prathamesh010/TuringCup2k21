@@ -1,12 +1,32 @@
--
-    const aboutStyle = {
-        'background-color': '#0F1311',
-        'height': '100vh',
-        'width': '100vw',
-        'color': '#76EC7E',
-        'text-align': 'center',
-        'font-size': '50px'
-    }
+h1.header.container |
+    span.heading ABOUT
+    span |
 
-div(style = aboutStyle)
-    h1 About Section!!!
+.container
+    .row
+
+        .col-12.col-sm-7.spacing
+            .question-1 What Is Turing Cup?
+            .answer-1.
+                Turing Cup is the annual flagship competitive programming contest organised by 
+                SIESGSTarena - the CodeChef SIESGST Campus Chapter. Currently in its second year, 
+                it will be held every spring, with the Qualifier round scheduled in February, and 
+                the on-site Finale at the SIESGST Campus in March.
+
+        .col-12.col-sm-3.spacing
+            .about-vector-1
+                include ../svgs/about-vector-1.svg
+    
+    .row
+        
+        .col-12.col-sm-5.spacing
+            .about-vector-2
+                include ../svgs/about-vector-2.svg
+
+        .col-12.col-sm-7.spacing
+            .question-2 How It Works?
+            .answer-2.
+                Register and compete in Turing Cup's Online Qualifier Round. It lasts 36 hours, 
+                but a strong contestant won't need that long to earn the round’s qualifying point. <br />
+                We’ll bring the top 20 contestants from Turing Cup Qualifier Round to our 
+                onsite Finals. There, they’ll compete for the championship title and prizes.

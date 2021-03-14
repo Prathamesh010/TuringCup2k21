@@ -1,0 +1,109 @@
+#about {
+    background-color: #0f1311;
+    width: 100vw;
+    min-height: 100vh;
+    font-family: 'Share Tech Mono', monospace;
+}
+
+.header {
+    color: #E7F4ED;
+    margin: 0;
+    font-size: 3em;
+    padding: 5rem 0rem 5rem 14rem;
+}
+
+.heading {
+    color: #76ec7e;
+}
+
+.question-1, .question-2 {
+    color: #E7F4ED;
+    font-size: 30px
+}
+
+.answer-1, .answer-2 {
+    color: #E7F4ED;
+    font-size: 20px;
+}
+
+.question-2, .answer-2 {
+    text-align: right;
+}
+
+svg {
+    padding: 0;
+    margin: 0;
+    width: 400px;
+    height: 300px;
+}
+
+@media (max-width: 990px) {
+    .about-vector-1 {
+        position: absolute;
+        top: 50px;
+        left: -20px;
+        opacity: 100%;
+    }
+    
+    svg {
+        height: 200px;
+        width: 350px;
+    }
+
+    .spacing {
+        padding: 1rem;
+    }
+    
+    .about-vector-2 {
+        position: absolute;
+        top: 90px;
+        opacity: 100%;
+    }
+}
+
+@media (max-width: 765px) {
+    .about-vector-1 {
+        position: absolute;
+        top: -250px;
+        opacity: 25%;
+    }
+
+    .spacing {
+        padding: 1rem;
+    }
+    
+    .about-vector-2 {
+        position: absolute;
+        top: 90px;
+        opacity: 25%;
+    }
+}
+
+@media (max-width: 400px) {
+    .header {
+        padding: 0.3rem;
+    }
+
+    svg {
+        height: 200px;
+        width: 350px;
+    }
+
+    .about-vector-1 {
+        position: absolute;
+        top: -270px;
+        left: 0px;
+        opacity: 25%;
+    }
+
+    .spacing {
+        padding: 1rem;
+    }
+    
+    .about-vector-2 {
+        position: absolute;
+        top: 130px;
+        left: -20px;
+        opacity: 25%;
+    }
+}
