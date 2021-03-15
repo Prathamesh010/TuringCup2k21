@@ -5,14 +5,14 @@
     font-family: 'Share Tech Mono', monospace;
 }
 
-.header {
+.about-header {
     color: #E7F4ED;
     margin: 0;
     font-size: 3em;
     padding: 5rem 0rem 5rem 14rem;
 }
 
-.heading {
+.about-heading {
     color: #76ec7e;
 }
 
@@ -30,7 +30,7 @@
     text-align: right;
 }
 
-svg {
+.about-svg {
     padding: 0;
     margin: 0;
     width: 400px;
@@ -45,7 +45,7 @@ svg {
         opacity: 100%;
     }
     
-    svg {
+    .about-svg {
         height: 200px;
         width: 350px;
     }
@@ -84,7 +84,7 @@ svg {
         padding: 0.3rem;
     }
 
-    svg {
+    .about-svg {
         height: 200px;
         width: 350px;
     }
