@@ -1,22 +1,30 @@
 doctype html
 
 html(lang="en")
-    style
-        include ../static/css/index.css
-
+    
     head
-        meta(charset='UTF-8')
-        meta(name='viewport' content='width=device-width, initial-scale=1.0')
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
         link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css' integrity='sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm' crossorigin='anonymous')
         script(src='https://code.jquery.com/jquery-3.1.1.slim.min.js' integrity='sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n' crossorigin='anonymous')
         script(src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js' integrity='sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl' crossorigin='anonymous')
         link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
-        title Turing Cup
+        link(rel='preconnect' href='https://fonts.gstatic.com')
+        link(href='https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap' rel='stylesheet')
 
-    body(style = "background: #0f1311;")
+        style
+            include ./css/header.css
+            include ./css/about.css
+            include ./css/poster.css
+            include ./css/registration.css
+            include ./css/schedule.css
+            include ./css/faq.css
+            include ./css/contact.css
 
-        #nav 
-            include ./sections/header.pug
+        title Turing Cup 2k21
+
+    body(style = "overflow-x: hidden; background-color: #0f1311;")
 
         #poster 
             include ./sections/poster.pug
