@@ -1,15 +1,9 @@
--
-    const posterStyles = {
-        'background-color': '#0F1311',
-        'height': '100vh',
-        'width': '100vw'
-    }
-
-    const headingStyles = {
-        'color': '#76EC7E',
-        'font-size': '50px',
-        'text-align': 'center'
-    }
-
-div( style = posterStyles )
-    div( style = headingStyles ) Poster Section!!!
+.row.d-flex.justify-content-center.landing.mt-lg-3
+  .col-lg-5.col-md-10.landing-illus
+    img.img-fluid(src ="./image/test.svg")
+  .col-lg-5.col-md-10.landing-content
+    .event-title Turing Cup 2021
+    .event-description
+      | The annual flagship competitive programming contest organised by
+      | SIESGSTarena - the CodeChef SIESGST Campus Chapter.
+    a(role='button' class='btn event-reg' href="#registration") Register -&gt;

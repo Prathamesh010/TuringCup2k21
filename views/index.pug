@@ -14,6 +14,7 @@ html(lang="en")
         link(href='https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap' rel='stylesheet')
 
         style
+            include ./css/index.css
             include ./css/header.css
             include ./css/about.css
             include ./css/poster.css
@@ -24,7 +25,10 @@ html(lang="en")
 
         title Turing Cup 2k21
 
-    body(style = "overflow-x: hidden; background-color: #0f1311;")
+    body
+
+        #header 
+            include ./sections/header.pug
 
         #poster 
             include ./sections/poster.pug
