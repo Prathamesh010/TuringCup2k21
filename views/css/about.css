@@ -9,7 +9,7 @@
     color: #E7F4ED;
     margin: 0;
     font-size: 3em;
-    padding: 5rem 0rem 5rem 14rem;
+    padding: 1rem 0rem;
 }
 
 .about-heading {
@@ -61,7 +61,26 @@
     }
 }
 
+@media (min-width: 580px) and (max-width: 765px) {
+    .about-vector-1 {
+        position: absolute;
+        top: -50px;
+        opacity: 25%;
+    }
+    
+    .about-vector-2 {
+        position: absolute;
+        top: 90px;
+        opacity: 25%;
+    }
+}
+
 @media (max-width: 765px) {
+
+    .about-header {
+        padding: 1rem;
+    }
+
     .about-vector-1 {
         position: absolute;
         top: -250px;
@@ -91,7 +110,7 @@
 
     .about-vector-1 {
         position: absolute;
-        top: -270px;
+        top: -300px;
         left: 0px;
         opacity: 25%;
     }
@@ -102,7 +121,7 @@
     
     .about-vector-2 {
         position: absolute;
-        top: 130px;
+        top: 150px;
         left: -20px;
         opacity: 25%;
     }
