@@ -1,0 +1,12 @@
+<svg width="100vw" height="100vh" fill="none" stroke="#76ec7e" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.12" viewBox="0 0 24 24">
+      <path class="reg-vec"  transform="translate(-10, 3) scale(1.5)"
+       d="M20 3 V10.5
+          M14 3 H20 
+          M3 4.5 H20
+          M3 6 H20
+          M3 7.5 H20
+          M3 9 H20
+          M19.7 10.2 20 10.5
+          M20.3 10.2 20 10.5">
+      </path>
+    </svg>

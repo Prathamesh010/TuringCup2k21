@@ -1,0 +1,38 @@
+#registration {
+    width: 100vw;
+    min-height: 100vh;
+    font-family: 'Share Tech Mono', monospace;
+}
+
+.fuck {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    margin: auto;
+    width: 75%;
+    color: #e7f4ed;
+}
+
+.reg-heading {
+    padding: 7px 20px 0px 0px;
+    width: min-content;
+    display: flex;
+    align-self: flex-end;
+    color: #76ec7e;
+    font-size: 50px;
+    border-bottom: 5px solid #76ec7e;
+}
+
+.ins {
+    padding: 15px 20px 15px 0px;
+    border-right: 5px solid #76ec7e;
+    border-bottom: 5px solid #76ec7e;
+    font-size: 30px;
+}
+
+.reg-btn {
+    padding: 15px 20px 0px 0px;
+    font-size: 40px;
+    color: #76ec7e !important;
+    border-right: 5px solid #76ec7e;
+}
