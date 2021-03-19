@@ -1,15 +1,17 @@
 #registration {
     width: 100vw;
-    min-height: 100vh;
+    height: 100vh;
     font-family: 'Share Tech Mono', monospace;
 }
 
-.fuck {
+.reg {
     display: flex;
     flex-direction: column;
     text-align: right;
+    justify-content: center;
     margin: auto;
-    width: 75%;
+    width: 65%;
+    height: inherit;
     color: #e7f4ed;
 }
 
@@ -19,20 +21,48 @@
     display: flex;
     align-self: flex-end;
     color: #76ec7e;
-    font-size: 50px;
-    border-bottom: 5px solid #76ec7e;
+    font-size: 40px;
+    border-bottom: 4px solid #76ec7e;
 }
 
 .ins {
     padding: 15px 20px 15px 0px;
-    border-right: 5px solid #76ec7e;
-    border-bottom: 5px solid #76ec7e;
-    font-size: 30px;
+    border-right: 4px solid #76ec7e;
+    border-bottom: 4px solid #76ec7e;
+    font-size: 20px;
 }
 
 .reg-btn {
     padding: 15px 20px 0px 0px;
-    font-size: 40px;
+    font-size: 35px;
     color: #76ec7e !important;
-    border-right: 5px solid #76ec7e;
+    border-right: 4px solid #76ec7e;
+}
+
+@media (max-width: 700px) {
+    .reg {
+        width: 90%;
+    }
+
+    .ins {
+        font-size: 16px;
+    }
+
+    .reg-btn {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 1100px) and (min-width: 700px) {
+    .reg {
+        width: 80%;
+    }
+
+    .ins {
+        font-size: 20px;
+    }
+
+    .reg-btn {
+        font-size: 30px;
+    }
 }
