@@ -1,0 +1,50 @@
+#question-1 {
+    width: 100vw;
+    height: 100vh;
+    font-family: "Share Tech Mono", monospace;
+}
+
+.form-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: max-content;
+    text-align: end;
+}
+
+.ques {
+    color: #76ec7e;
+    text-align: left !important;
+    padding: 0px 10px;
+    letter-spacing: 2px;
+    font-size: 30px;
+}
+
+.reply {
+    padding-top: 10px;
+    text-align: left !important;
+    border-bottom: 4px solid #76ec7e;
+}
+
+.reply > span {
+    color: #76ec7e;
+}
+
+.ans {
+    letter-spacing: 2px;
+    padding: 0px 10px;
+    background: #0f1311;
+    border: none;
+    font-size: 30px;
+    color: rgb(200, 200, 200);
+}
+
+.nxt {
+    letter-spacing: 2px;
+    padding: 10px 15px 0px 0px;
+    background: #0f1311;
+    border: none;
+    font-size: 30px;
+    color: #76ec7e;
+    border-right: 4px solid #76ec7e;
+}
