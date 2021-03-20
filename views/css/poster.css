@@ -63,6 +63,10 @@
   color: #fff;
 }
 
+.event-reg > a:hover {
+  color: #0f1311;
+}
+
 #chevron {
   height: 34px;
   width: 34px;
@@ -161,53 +165,6 @@
   }
 }
 
-/* 18:9 devices */
-@media screen and (min-device-width: 411px) and (max-device-height: 823px) {
-  .navbar-toggler {
-    padding: 0em;
-  }
-
-  .brand-desk {
-    display: none;
-  }
-
-  .landing-illus {
-    margin-top: 1em;
-  }
-
-  .toggler-icon {
-    height: 34px;
-    width: 34px;
-  }
-
-  .landing-content {
-    margin-top: 3em;
-  }
-
-  .event-title {
-    font-size: 54px;
-    margin: 0em 0em 0em 0.3em;
-  }
-
-  .event-description {
-    font-size: 20px;
-    text-align: justify;
-    margin: 1em 1em 0em 1em;
-  }
-
-  .reg-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-  }
-
-  .event-reg {
-    font-size: 28px;
-    margin: 1em 0em 0em 0em;
-  }
-}
-
 /* 16:8 devices */
 @media screen and (min-device-width: 411px) and (max-device-width: 767px) {
   .brand-desk {
@@ -253,6 +210,53 @@
 
   .event-reg {
     font-size: 24px;
+    margin: 1em 0em 0em 0em;
+  }
+}
+
+/* 18:9 devices */
+@media screen and (device-width: 411px) and (device-height: 823px) {
+  .navbar-toggler {
+    padding: 0em;
+  }
+
+  .brand-desk {
+    display: none;
+  }
+
+  .landing-illus {
+    margin-top: 1em;
+  }
+
+  .toggler-icon {
+    height: 34px;
+    width: 34px;
+  }
+
+  .landing-content {
+    margin-top: 3em;
+  }
+
+  .event-title {
+    font-size: 54px;
+    margin: 0em 0em 0em 0.3em;
+  }
+
+  .event-description {
+    font-size: 20px;
+    text-align: justify;
+    margin: 1em 1em 0em 1em;
+  }
+
+  .reg-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .event-reg {
+    font-size: 28px;
     margin: 1em 0em 0em 0em;
   }
 }
