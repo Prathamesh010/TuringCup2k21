@@ -1,8 +1,66 @@
-.reg 
-    span.reg-heading &nbsp;Register<br />
-    span.ins Entry fee for participating in Turing Cup 2019 is ₹50<br />
-    span.ins Pay via Cash or UPI as per your option selected in registration form<br />
-    span.ins Registrations are closed<br />
-    span.ins Receive contest link for Qualifier on 15th February and make your way to the finals<br />
-    a.reg-btn Register Now!
-    i.fa.fa-2x.fa-chevron-down.arrow(aria-hidden="true")
+.reg
+  span.reg-heading
+    | Register
+    br
+  span.ins
+    | Entry fee for participating in Turing Cup 2019 is &#x20B9;50
+    br
+  span.ins
+    | Pay via Cash or UPI as per your option selected in registration form
+    br
+  span.ins
+    | Registrations are closed
+    br
+  span.ins
+    | Receive contest link for Qualifier on 15th February and make your way
+    | to the finals
+    br
+  a.reg-btn(onclick='hideReg()') Register Now!
+  i.fa.fa-2x.fa-chevron-down.arrow(aria-hidden='true')
+form.form-cont.container(action='')
+  .item(style='display: none')
+    .question
+      span.ques &gt;
+      span.ques Hello! What&apos;s your Name?
+    .reply
+      span.ans $
+      input.ans(type='text' name='name' placeholder='FirstName LastName')
+    .next-btn
+      input.nxt(type='button' name='next-btn' value='Next' onclick='ql()')
+    i.fa.fa-2x.fa-chevron-down.arrow(aria-hidden='true')
+  .item(style='display: none')
+    .question
+      span.ques &gt;
+      span.ques Number bolo
+    .reply
+      span.ans $
+      input.ans(type='text' name='name' placeholder='FirstName LastName')
+    .next-btn
+      input.nxt(type='button' name='next-btn' value='Next' onclick='ql()')
+    i.fa.fa-2x.fa-chevron-down.arrow(aria-hidden='true')
+  .item(style='display: none')
+    .question
+      span.ques &gt;
+      span.ques PRn ?
+    .reply
+      span.ans $
+      input.ans(type='text' name='name' placeholder='FirstName LastName')
+    .next-btn
+      input.nxt(type='button' name='next-btn' value='Next' onclick='ql()')
+    i.fa.fa-2x.fa-chevron-down.arrow(aria-hidden='true')
+
+script.
+  var x = document.getElementsByClassName("reg")[0]
+  var y = document.getElementsByClassName("item")[0]
+  function hideReg() {
+    x.style.display = "none"
+    y.style.display = "block"
+  }
+  var count = 1
+  function ql() {
+    var temp = count - 1
+    $(".item:eq(" + temp + ")").hide()
+    $(".item:eq(" + count + ")").show()
+    count++
+  }
+
