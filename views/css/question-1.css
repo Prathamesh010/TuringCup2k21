@@ -9,10 +9,12 @@
     flex-direction: column;
     justify-content: center;
     width: max-content;
+    margin: auto;
+    height: inherit;
     text-align: end;
 }
 
-.ques {
+.question {
     color: #76ec7e;
     text-align: left !important;
     padding: 0px 10px;
@@ -20,14 +22,26 @@
     font-size: 30px;
 }
 
+.ques {
+    padding: 0px 10px 0px 0px;
+}
+
 .reply {
+    display: flex;
     padding-top: 10px;
+    outline: none;
     text-align: left !important;
     border-bottom: 4px solid #76ec7e;
 }
 
 .reply > span {
     color: #76ec7e;
+}
+
+.ans-input {
+    border: none;
+    font-size: 30px;
+    background-color: #0f1311;
 }
 
 .ans {
@@ -47,4 +61,28 @@
     font-size: 30px;
     color: #76ec7e;
     border-right: 4px solid #76ec7e;
+}
+
+::placeholder {
+    font-size: 100%;
+}
+
+@media (max-width: 700px) {
+    .form-cont {
+        width: 95%;
+    }
+
+    .ans, .question, .nxt, ::placeholder {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 1100px) and (min-width: 700px) {
+    .form-cont {
+        width: 70%;
+    }
+
+    .ans, .question, .nxt, ::placeholder {
+        font-size: 30px;
+    }
 }
