@@ -22,7 +22,10 @@ button:focus {
 }
 
 .item {
-  padding-top: 220px;
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .question {

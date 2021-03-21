@@ -72,7 +72,7 @@ script.
 
 	function hideReg() {
 		x.style.display = "none"
-		z.style.display = "block"
+		z.style.display = "flex"
 		y[0].className = "item fade-in-bottom"
 	}
 
@@ -82,7 +82,7 @@ script.
 		console.log(y[count - 1])
 		y[count - 1].className = "item fade-out-up"
 		y[count - 1].style.display = "none"
-		y[count].style.display = "block"
+		y[count].style.display = "flex"
 		y[count].className = "item fade-in-bottom"
 	}
 
@@ -90,6 +90,6 @@ script.
 		count--
 		y[count + 1].className = "item fade-out-bottom"
 		y[count + 1].style.display = "none"
-		y[count].style.display = "block"
+		y[count].style.display = "flex"
 		y[count].className = "item fade-in-top"
 	}
