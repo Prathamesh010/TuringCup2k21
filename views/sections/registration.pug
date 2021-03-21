@@ -1,4 +1,4 @@
-.reg
+.reg.fade-in-top
   span.reg-heading
     | Register
     br
@@ -17,50 +17,79 @@
     br
   a.reg-btn(onclick='hideReg()') Register Now!
   i.fa.fa-2x.fa-chevron-down.arrow(aria-hidden='true')
-form.form-cont.container(action='')
-  .item(style='display: none')
+form.form-cont.container(action='https://docs.google.com/forms/d/e/1FAIpQLSe3w7tJepz8AyCNHmhxhTQQoqSwC32hwTWYerVdgSixbbJS9w/viewform?usp=sf_link' style='display: none')
+  .item
     .question
       span.ques &gt;
       span.ques Hello! What&apos;s your Name?
     .reply
       span.ans $
-      input.ans-input(type='text' name='name' placeholder='First Last')
+      input.ans-input(type='text' name='entry.2092238618' placeholder='First Last')
     .next-btn
-      input.nxt(type='button' name='next-btn' value='Next' onclick='ql()')
+      input.nxt(type='button' name='next-btn' value='Next' onclick='nql()')
     i.fa.fa-2x.fa-chevron-down.arrow(aria-hidden='true')
   .item(style='display: none')
     .question
       span.ques &gt;
-      span.ques Provide Your Number for Contact
+      span.ques Email Address
     .reply
       span.ans $
-      input.ans-input(type='text' name='name' placeholder='9804209211')
+      input.ans-input(type='email' name='entry.1556369182' placeholder='jon@gmail.com')
     .next-btn
-      input.nxt(type='button' name='next-btn' value='Next' onclick='ql()')
+      input.nxt(type='button' name='next-btn' value='Next' onclick='nql()')
     i.fa.fa-2x.fa-chevron-down.arrow(aria-hidden='true')
   .item(style='display: none')
     .question
       span.ques &gt;
-      span.ques We call you by Your PRN/Roll.No.
+      span.ques College Name:
     .reply
       span.ans $
-      input.ans-input(type='text' name='name' placeholder='111A1011')
+      input.ans-input(type='text' name='entry.479301265' placeholder='SIESGST')
     .next-btn
-      input.nxt(type='button' name='next-btn' value='Next' onclick='ql()')
+      input.nxt(type='button' name='next-btn' value='Next' onclick='nql()')
     i.fa.fa-2x.fa-chevron-down.arrow(aria-hidden='true')
-
+  .item(style='display: none')
+    .question
+      span.ques &gt;
+      span.ques Branch:
+    .reply
+      span.ans $
+      input.ans-input(type='text' name='entry.1091102377' placeholder='CE')
+    .next-btn
+      input.nxt(type='button' name='next-btn' value='Next' onclick='nql()')
+    i.fa.fa-2x.fa-chevron-down.arrow(aria-hidden='true')
+  .item(style='display: none')
+    .question
+      span.ques &gt;
+      span.ques Year:
+    .reply
+      span.ans $
+      input.ans-input(type='text' name='entry.588393791' placeholder='FE')
+    .next-btn
+      input.nxt(type='submit' name='next-btn' value='Submit')
+    i.fa.fa-2x.fa-chevron-down.arrow(aria-hidden='true')
 script.
   var x = document.getElementsByClassName("reg")[0]
-  var y = document.getElementsByClassName("item")[0]
+  var y = document.getElementsByClassName("item")
+  var z = document.getElementsByClassName("form-cont")[0]
   function hideReg() {
     x.style.display = "none"
-    y.style.display = "block"
+    z.style.display = "block"
+    y[0].className = "item fade-in-bottom"
   }
-  var count = 1
-  function ql() {
-    var temp = count - 1
-    $(".item:eq(" + temp + ")").hide()
-    $(".item:eq(" + count + ")").show()
+  var count = 0
+  function nql() {
     count++
+    console.log(y[count - 1])
+    y[count - 1].className = "item fade-out-up"
+    y[count - 1].style.display = "none"
+    y[count].style.display = "block"
+    y[count].className = "item fade-in-bottom"
   }
-
+  function pql() {
+    count--
+    y[count + 1].className = "item fade-out-bottom"
+    y[count + 1].style.display = "none"
+    y[count].style.display = "block"
+    y[count].className = "item fade-in-top"
+  }
