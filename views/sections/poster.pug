@@ -2,10 +2,10 @@ include ./header.pug
 .row.d-flex.justify-content-center.landing
   .col-lg-5.col-md-10
     .row.landing-illus
-      .col-md-11
+      .col-md-11.fade-in-top
         img.img-fluid(src='./image/test.svg')
-      .col-md-10.timer.text-center.mt-5.d-none.d-sm-block
-        .row
+      .col-md-10.timer.text-center.mt-5.d-none.d-sm-block.fade-in-top
+        .row.scale-in-center
           .col.days
             h2#days.value(style='color: #2e8953') 00
             h4 DAYS
@@ -18,7 +18,7 @@ include ./header.pug
           .col.seconds
             h2#seconds.value(style='color: #2e8953') 00
             h4 SECS
-  .col-lg-5.col-md-10.landing-content
+  .col-lg-5.col-md-10.landing-content.fade-in-top
     .event-title Turing Cup 2021
     .event-description
       | The annual flagship competitive programming contest organised by
