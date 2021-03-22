@@ -1,12 +1,92 @@
--
-    const faqStyle = {
-        'background-color': '#0F1311',
-        'height': '100vh',
-        'width': '100vw',
-        'color': '#76EC7E',
-        'text-align': 'center',
-        'font-size': '50px'
-    }
-
-div(style = faqStyle)
-    h1 FAQ Section!!!
+.container-fluid
+	.row
+		.col-lg-4.faq-details
+			.faq-title
+				span(style='color: #e7f4ed') F
+				| requently 
+				br
+				span(style='color: #e7f4ed') A
+				| sked 
+				br
+				span(style='color: #e7f4ed') Q
+				| uestions
+			.faq-illus
+				img.img-fluid(src='./image/faq.svg')
+		.col-lg-8.acc
+			#accordion
+				.faq-item(data-toggle='collapse' data-target='#collapseOne' aria-expanded='false' aria-controls='collapseOne')
+					.faq-header
+						h5.mb-0.faq-q
+							a(data-toggle='collapse' href='#collapse-example' aria-expanded='false' aria-controls='collapse-example')
+								img.pull-right(src='./image/down-chevron.svg')
+								|                     How is it Conducted?
+					#collapseOne.collapse.faq-a(aria-labelledby='headingOne' data-parent='#accordion')
+						p
+							| Turing Cup 2019 comprises of the following rounds:
+							| Qualification Round: Qualification round consists of an online
+							| contest which will be conducted on 16th and 17th February,
+							| 2019. Onsite Finale: It will be conducted in SIES Graduate
+							| School of Technology, Nerul.
+				.faq-item(data-toggle='collapse' data-target='#collapseTwo' aria-expanded='false' aria-controls='collapseTwo')
+					.faq-header
+						h5.mb-0.faq-q
+							a(data-toggle='collapse' href='#collapse-example' aria-expanded='false' aria-controls='collapse-example')
+								img.pull-right(src='./image/down-chevron.svg')
+								|                     How do I register?
+					#collapseTwo.collapse.faq-a(aria-labelledby='headingTwo' data-parent='#accordion')
+						p
+							| All participants have to pay via Cash / UPI and fill a
+							| registration form. Deadline for filling the form will be 14th
+							| of February 11:59 PM
+				.faq-item(data-toggle='collapse' data-target='#collapseThree' aria-expanded='false' aria-controls='collapseThree')
+					.faq-header
+						h5.mb-0.faq-q
+							a(data-toggle='collapse' href='#collapse-example' aria-expanded='false' aria-controls='collapse-example')
+								img.pull-right(src='./image/down-chevron.svg')
+								|                     What if I have been never to a programming contest?
+					#collapseThree.collapse.faq-a(aria-labelledby='headingThree' data-parent='#accordion')
+						p
+							| Turing Cup is the best way to start. Our aim is to provide a
+							| place to learn in a short amount of time, interact and learn
+							| from other like minded people.
+				.faq-item(data-toggle='collapse' data-target='#collapseFour' aria-expanded='false' aria-controls='collapseFour')
+					.faq-header
+						h5.mb-0.faq-q
+							a(data-toggle='collapse' href='#collapse-example' aria-expanded='false' aria-controls='collapse-example')
+								img.pull-right(src='./image/down-chevron.svg')
+								|                     Can I refer to internet during contest?
+					#collapseFour.collapse.faq-a(aria-labelledby='headingFour' data-parent='#accordion')
+						p
+							| Yes. We do encourage referencing of online resources in case
+							| of any difficulty but any form of plagiarism will be met by
+							| strict action.
+				.faq-item(data-toggle='collapse' data-target='#collapseFive' aria-expanded='false' aria-controls='collapseFive')
+					.faq-header
+						h5.mb-0.faq-q
+							a(data-toggle='collapse' href='#collapse-example' aria-expanded='false' aria-controls='collapse-example')
+								img.pull-right(src='./image/down-chevron.svg')
+								|                     What should I carry along for the finals?
+					#collapseFive.collapse.faq-a(aria-labelledby='headingFive' data-parent='#accordion')
+						p Any valid Identity Proof or College ID Card
+				.faq-item(data-toggle='collapse' data-target='#collapseSix' aria-expanded='false' aria-controls='collapseSix')
+					.faq-header
+						h5.mb-0.faq-q
+							a(data-toggle='collapse' href='#collapse-example' aria-expanded='false' aria-controls='collapse-example')
+								img.pull-right(src='./image/down-chevron.svg')
+								|                     What will be provided?
+					#collapseSix.collapse.faq-a(aria-labelledby='headingSix' data-parent='#accordion')
+						p
+							| You will provided with a workstation and Internet connection
+							| for competing. You will be provided with stationery materials
+							| if necessary.
+				.faq-item(data-toggle='collapse' data-target='#collapseSeven' aria-expanded='false' aria-controls='collapseSeven')
+					.faq-header
+						h5.mb-0.faq-q
+							a(data-toggle='collapse' href='#collapse-example' aria-expanded='false' aria-controls='collapse-example')
+								img.pull-right(src='./image/down-chevron.svg')
+								|                     What are the Prizes and Certificates?
+					#collapseSeven.collapse.faq-a(aria-labelledby='headingSeven' data-parent='#accordion')
+						p
+							| Prizes worth 10,000 are to be won. Goodies and Certificates
+							| will be given to all the finalists.
+script(src='./js/faq.js')
