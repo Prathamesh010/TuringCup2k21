@@ -9,7 +9,7 @@ a {
   text-decoration: none;
 }
 #registration {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   font-family: "Share Tech Mono", monospace;
 }
@@ -204,4 +204,41 @@ a {
     transform: translateY(50px);
     opacity: 0;
   }
+}
+
+.radio-label {
+  position: relative;
+  display: inline-block;
+  color: #e7f4ed;
+  margin: 10px;
+}
+.radio-label input {
+  opacity: 0;
+  position: absolute;
+}
+.radio-label .inner-label {
+  position: relative;
+  display: inline-block;
+  font-size: 25px;
+  padding-left: 20px;
+}
+.radio-label .inner-label:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border-bottom: 1px dashed #e7f4ed;
+  width: 10px;
+  transition: border-bottom 0.5s ease;
+}
+.radio-label input:focus ~ .inner-label:before {
+  border-bottom: 1px solid #e7f4ed;
+}
+.radio-label input:checked ~ .inner-label:after {
+  content: '\2713';
+  color: #76ec7e;
+  position: absolute;
+  font-size: 30px;
+  left: 0px;
+  top: -2px;
 }
