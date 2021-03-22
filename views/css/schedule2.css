@@ -67,6 +67,15 @@
   display: none;
 }
 
+.schedule-card {
+  border-radius: 10px;
+  background-color: rgb(22, 26, 22);
+}
+
+.desk {
+  margin-top: 2em;
+}
+
 @media (max-width: 990px) {
 }
 
