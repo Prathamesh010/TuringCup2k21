@@ -1,12 +1,43 @@
--
-    const contactStyle = {
-        'background-color': '#0F1311',
-        'height': '100vh',
-        'width': '100vw',
-        'color': '#76EC7E',
-        'text-align': 'center',
-        'font-size': '50px'
-    }
+.container
+    .row.align-items-center.justify-content-center
+        .con-head.col
+            span(style='color: #e7f4ed') Feel&nbsp;
+            | Free 
+            br
+            span(style='color: #e7f4ed') To&nbsp;
+            | Get&nbsp;In&nbsp;Touch
+            br
+            span(style='color: #e7f4ed') With&nbsp;
+            | Our&nbsp;Team
 
-div(style = contactStyle)
-    h1 Contact Section!!!
+        .icon-group.col-lg.col-md-12.col-sm-12.col-12
+            i.icon-item.fa.size.fa-instagram(aria-hidden='true')
+            i.icon-item.fa.size.fa-github(aria-hidden='true')
+            i.icon-item.fa.size.fa-linkedin-square(aria-hidden='true')
+            i.icon-item.fa.size.fa-twitter(aria-hidden='true')
+            i.icon-item.fa.size.fa-facebook(aria-hidden='true')
+            i.icon-item.fa.size.fa-medium(aria-hidden='true')
+
+    .row.align-items-center
+        .col-lg-7.col-md-12.col-sm-12.col-12.order-md-last.order-first.order-sm-first.order-md-first.order-lg-last
+            include ../../static/image/contact.svg
+        
+        .con-mail-phone.col.order-md-first.order-last.order-sm-last.order-md-last.order-lg-first
+            i.fa.fa-envelope(aria-hidden='true' style="color: #76ec7e") &nbsp;
+            | codechef
+            span(style='color: #76ec7e') @
+            | siesgst.sc.in 
+            br
+            .phone
+                i.fa.fa-phone(aria-hidden='true' style="color: #76ec7e") &nbsp;
+                | Rahul 
+                i.fa.fa-phone(aria-hidden='true' style="color: #76ec7e") &nbsp;
+                | Cibin 
+    
+    .row.justify-content-center
+        .college.d-none.d-sm-none.d-md-block
+            | SIES Graduate School of Technology | <br />
+            span.addr(style='color: #e7f4ed') Sri Chandrasekarendra Saraswati Vidyapuram, Sector-V, Nerul,<br /> Navi Mumbai, Maharastra - 400706.
+        .college.d-block.d-sm-block.d-md-none.d-lg-none 
+            | SIES GST |&nbsp;
+            span(style="color: #e7f4ed") Nerul
