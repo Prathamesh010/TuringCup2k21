@@ -1,12 +1,44 @@
--
-    const scheduleStyle = {
-        'background-color': '#0F1311',
-        'height': '100vh',
-        'width': '100vw',
-        'color': '#76EC7E',
-        'text-align': 'center',
-        'font-size': '50px'
-    }
-
-div(style = scheduleStyle)
-    h1 Schedule Section!!!
+.container.schedule
+  .schedule-header.mt-4
+    h1 &gt; Schedule
+  ul.timeline.mt-4
+    li
+      .timeline-badge
+        i.glyphicon.glyphicon-check
+      .timeline-panel
+        .timeline-heading
+          h4.timeline-date 27 March 2021
+          p.timeline-title Registration Begins!
+        .timeline-body
+          p
+            | Register individually following the procedure given in registration section.
+    li.timeline-inverted
+      .timeline-badge.warning
+        i.glyphicon.glyphicon-credit-card
+      .timeline-panel
+        .timeline-heading
+          h4.timeline-date 1st April 2021
+          p.timeline-title Registration Ends
+        .timeline-body
+          p
+            | Registration ends on 14th February 11:59 PM.
+    li
+      .timeline-badge
+        i.glyphicon.glyphicon-check
+      .timeline-panel
+        .timeline-heading
+          h4.timeline-date 1-3 February 2019
+          p.timeline-title Qualifier Round
+        .timeline-body
+          p
+            | Top 10 from SIES Graduate School of Technology, Nerul and top 10 from various colleges will qualify for the Onsite Finals.
+    li.timeline-inverted
+      .timeline-badge.warning
+        i.glyphicon.glyphicon-credit-card
+      .timeline-panel
+        .timeline-heading
+          h4.timeline-date 5th April 2021
+          p.timeline-title Onsite Finals?
+        .timeline-body
+          p
+            | Onsite Finalists will be competing for the Turing Cup 2019 Champion Title!

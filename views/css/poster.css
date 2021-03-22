@@ -1,0 +1,303 @@
+#poster {
+  width: 100vw;
+  min-height: 100vh;
+}
+
+.landing {
+  height: min-content;
+}
+
+.landing-illus {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: min-content;
+  margin-top: 1.5em;
+}
+
+.landing-svg {
+  margin-left: 4em;
+}
+
+.landing-content {
+  height: min-content;
+  margin-top: 0.5em;
+}
+
+.landing-content > a:hover {
+  color: #0f1311;
+}
+
+.event-title {
+  font-family: Share Tech Mono;
+  font-size: 64px;
+  color: #ffffff;
+  margin: 1em 0em 0em 1em;
+}
+
+.event-description {
+  font-family: Share Tech Mono;
+  font-size: 18px;
+  color: #e7f4ed;
+  margin: 0em 0em 0em 4em;
+}
+
+.event-reg {
+  background-color: #2e8953;
+  color: #e7f4ed;
+  font-family: Share Tech Mono;
+  font-size: 28px;
+  border-radius: 30px;
+  padding: 0.2em 0.8em 0.2em 0.8em;
+  margin: 2em 0em 0em 2.6em;
+}
+
+.days,
+.hours,
+.minutes {
+  color: #fff;
+  border-right: 2px solid #ffff;
+}
+
+.seconds {
+  color: #fff;
+}
+
+.reg-button > a:hover {
+  color: #0f1311;
+}
+
+#chevron {
+  height: 34px;
+  width: 34px;
+  color: #e7f4ed;
+  margin-top: 1em;
+}
+
+.bounce {
+  -moz-animation: bounce 3s infinite;
+  -webkit-animation: bounce 3s infinite;
+  animation: bounce 3s infinite;
+}
+@-moz-keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -moz-transform: translateY(0);
+    transform: translateY(0);
+  }
+  60% {
+    -moz-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+}
+@-webkit-keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  60% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+}
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  60% {
+    -moz-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+}
+
+/* tablets */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .brand-desk {
+    display: none;
+  }
+
+  .landing-illus {
+    margin-top: 1em;
+  }
+
+  #chevron {
+    margin-top: 1em;
+  }
+
+  .event-title {
+    font-size: 48px;
+    margin: 1em 0em 0em 0.5em;
+  }
+
+  .event-description {
+    font-size: 24px;
+    margin: 0em 1em 0em 1em;
+  }
+
+  .reg-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .event-reg {
+    font-size: 34px;
+    margin: 1em 0em 0em 0em;
+  }
+}
+
+/* 16:8 devices */
+@media screen and (min-device-width: 411px) and (max-device-width: 767px) {
+  .brand-desk {
+    display: none;
+  }
+
+  .navbar-toggler {
+    padding: 0em;
+  }
+
+  .toggler-icon {
+    height: 34px;
+    width: 34px;
+  }
+
+  .landing-content {
+    margin-top: 3em;
+  }
+
+  .landing-illus {
+    margin-top: 2em;
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+
+  .event-title {
+    font-size: 36px;
+    margin: 0em 0em 0em 0.3em;
+  }
+
+  .event-description {
+    font-size: 18px;
+    text-align: justify;
+    margin: 1em 1em 0em 1em;
+  }
+
+  .reg-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .event-reg {
+    font-size: 24px;
+    margin: 1em 0em 0em 0em;
+  }
+}
+
+/* 18:9 devices */
+@media screen and (device-width: 411px) and (device-height: 823px) {
+  .navbar-toggler {
+    padding: 0em;
+  }
+
+  .brand-desk {
+    display: none;
+  }
+
+  .landing-illus {
+    margin-top: 1em;
+  }
+
+  .toggler-icon {
+    height: 34px;
+    width: 34px;
+  }
+
+  .landing-content {
+    margin-top: 3em;
+  }
+
+  .event-title {
+    font-size: 54px;
+    margin: 0em 0em 0em 0.3em;
+  }
+
+  .event-description {
+    font-size: 20px;
+    text-align: justify;
+    margin: 1em 1em 0em 1em;
+  }
+
+  .reg-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .event-reg {
+    font-size: 28px;
+    margin: 1em 0em 0em 0em;
+  }
+}
+
+/* small devices */
+@media screen and (min-device-width: 360px) and (max-device-width: 410px) {
+  #chevron {
+    margin-top: 0.6em;
+  }
+  .brand-desk {
+    display: none;
+  }
+
+  .landing-content {
+    margin-top: 2em;
+  }
+
+  .landing-illus {
+    margin: 2em 1em 0em 1em;
+  }
+
+  .event-title {
+    font-size: 36px;
+    margin: 0em 0em 0em 0.5em;
+  }
+
+  .event-description {
+    text-align: justify;
+    font-size: 18px;
+    margin: 1em 1em 0em 1em;
+  }
+
+  .reg-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .event-reg {
+    font-size: 20px;
+    margin: 1em 0em 0em 0em;
+  }
+}
