@@ -30,6 +30,7 @@
 
 .faq-q {
   font-size: 18px;
+  font-weight: bold;
 }
 
 .faq-q > a {
@@ -120,6 +121,8 @@
   .expand {
     margin-bottom: 1.5em;
     margin-top: 1.5em;
+    margin-right: 1em;
+    margin-left: 1em;
   }
 }
 
@@ -146,6 +149,7 @@
   .expand {
     margin-bottom: 1.5em;
     margin-top: 1.5em;
+    transform: scale(1.05);
   }
 }
 
