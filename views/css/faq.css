@@ -9,14 +9,12 @@
   justify-content: flex-start;
   align-items: flex-start;
   margin-top: 14em;
-  margin-left: 3em;
-  margin-right: 3em;
   width: fit-content;
 }
 
 .faq-item {
   background: #286c44;
-  margin: 0.5em 3em 0em 1em;
+  margin: 0.5em 1em 0em 1em;
   border-radius: 15px;
   color: #e7f4ed;
   padding: 1em;
@@ -50,7 +48,7 @@
 }
 
 .faq-title {
-  margin: 1em 1em 1em 1.5em;
+  margin: 1em 1em 1em 0em;
   font-size: 40px;
   color: #2e8953;
 }

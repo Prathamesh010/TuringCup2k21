@@ -4,6 +4,10 @@
   font-family: Share Tech Mono;
 }
 
+ol {
+  padding-inline-start: 0px;
+}
+
 .schedule-header {
   color: #76ec7e;
 }
@@ -21,9 +25,18 @@
   margin-bottom: 1em !important;
 }
 
+.events-content {
+  padding-left: 3em;
+  padding-right: 3em;
+}
+
 .timeline-title-mob {
   font-size: 28px !important;
   color: #f2f2f2 !important;
+}
+
+.timeline-body-mob {
+  margin-top: 2em !important;
 }
 
 .timeline-date {
@@ -90,6 +103,10 @@
   .mob {
     display: block;
   }
+
+  .events-content {
+    margin-top: 1em !important;
+  }
 }
 
 @media (max-width: 411px) {
@@ -99,6 +116,10 @@
 
   .mob {
     display: block;
+  }
+
+  .events-content {
+    margin-top: 1em !important;
   }
 }
 

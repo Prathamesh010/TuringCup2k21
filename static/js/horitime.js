@@ -254,7 +254,7 @@ jQuery(document).ready(function ($) {
     var eventDate = event.data("date"),
       visibleContent = eventsContent.find(".selected"),
       selectedContent = eventsContent.find('[data-date="' + eventDate + '"]'),
-      selectedContentHeight = 500
+      selectedContentHeight = 400
 
     if (selectedContent.index() > visibleContent.index()) {
       var classEnetering = "selected enter-right",
