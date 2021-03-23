@@ -36,3 +36,38 @@ a {
 a:hover {
   color: #2e8953;
 }
+
+#scroll {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  text-indent: -9999px;
+  display: none;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  border: 1px solid #30791e;
+  margin: 10px;
+  z-index: 1;
+}
+#scroll span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -8px;
+  margin-top: -12px;
+  height: 0;
+  width: 0;
+  border: 8px solid transparent;
+  border-bottom-color: #46cc42;
+}
+#scroll:hover {
+  background-color: #30791e;
+  opacity: 1;
+  filter: "alpha(opacity=100)";
+  -ms-filter: "alpha(opacity=100)";
+}
