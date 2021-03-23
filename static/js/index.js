@@ -6,8 +6,13 @@ jQuery(document).ready(function () {
       jQuery("#scroll").fadeOut()
     }
   })
-  jQuery("#scroll").click(function () {
-    // jQuery("html, body").animate({ scrollTop: 0 }, 400)
-    // return false
+})
+
+$(function () {
+  AOS.init({
+    offset: 100,
+    duration: 1000,
   })
 })
+
+window.addEventListener("load", AOS.refresh)
