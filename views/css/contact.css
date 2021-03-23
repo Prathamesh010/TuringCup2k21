@@ -1,93 +1,113 @@
 #contact {
-    width: 100vw;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-family: 'Share Tech Mono', monospace;
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Share Tech Mono", monospace;
 }
 
 .con-head {
-    font-size: 40px;
-    color: #76ec7e;
+  font-size: 40px;
+  color: #76ec7e;
 }
 
 @media (max-width: 700px) {
-    .con-head {
-        font-size: 40px;
-    }
+  .con-head {
+    font-size: 40px;
+  }
 }
 
 @media (max-width: 415px) {
-    .con-head {
-        font-size: 40px;
-    }
+  .con-head {
+    font-size: 40px;
+  }
 }
 
 @media (max-width: 350px) {
-    .con-head {
-        font-size: 30px;
-    }
+  .con-head {
+    font-size: 30px;
+  }
 }
 
 .icon-group {
-    text-align: center;
+  text-align: center;
 }
 
-.icon-item{
-    padding: 0px 30px 30px 0px;
-    font-size: 3em;
-    color: #e7f4ed;
+.icon-item {
+  padding: 0px 30px 30px 0px;
+  font-size: 3em;
+  color: #e7f4ed;
 }
 
 @media (max-width: 1000px) {
-    .icon-item {
-        padding: 30px 20px 30px 20px;
-    }
+  .icon-item {
+    padding: 30px 20px 30px 20px;
+  }
 }
 
 @media (max-width: 600px) {
-    .icon-item {
-        font-size: 2.5em;
-        padding: 30px 15px 30px 15px;
-    }
+  .icon-item {
+    font-size: 2.5em;
+    padding: 30px 15px 30px 15px;
+  }
 }
 
 @media (max-width: 415px) {
-    .icon-item {
-        font-size: 2em;
-        padding: 30px 10px 30px 10px;
-    }
+  .icon-item {
+    font-size: 2em;
+    padding: 30px 10px 30px 10px;
+  }
 }
 
 .con-svg {
-    width: 300px;
+  width: 300px;
 }
 
 .con-mail-phone {
-    color: #e7f4ed;
-    font-size: 33px;
-    text-align: center;
+  color: #e7f4ed;
+  font-size: 33px;
+  text-align: center;
+}
+
+.con-mail-phone > a {
+  text-decoration: none;
+  color: #76ec7e;
+}
+
+.phone > a {
+  text-decoration: none;
+  color: #76ec7e;
+}
+
+.con-mail-phone > a:hover {
+  text-decoration: none;
+  color: #dfffe1;
+}
+
+.phone > a:hover {
+  text-decoration: none;
+  color: #dfffe1;
 }
 
 @media (max-width: 850px) {
-    .con-mail-phone {
-        font-size: 25px;
-    }
+  .con-mail-phone {
+    font-size: 25px;
+  }
 }
 
 .phone {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 .college {
-    color: #76ec7e;
-    bottom: 0px;
-    margin-top: 20px;
-    font-size: 25px;
-    text-align: center;
+  color: #76ec7e;
+  bottom: 0px;
+  margin-top: 20px;
+  font-size: 25px;
+  text-align: center;
 }
 
 .addr {
-    font-size: 20px;
+  font-size: 20px;
 }
