@@ -1,6 +1,9 @@
 #poster {
   width: 100vw;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .landing {

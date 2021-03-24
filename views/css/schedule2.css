@@ -1,7 +1,10 @@
 #schedule {
   width: 100vw;
   min-height: 100vh;
-  font-family: Share Tech Mono;
+  font-family: 'Share Tech Mono' monospace;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 ol {
