@@ -1,5 +1,5 @@
-div(data-aos="fade-up").container
-    .row.align-items-center.justify-content-center
+.container
+    div(data-aos="fade-up").row.align-items-center.justify-content-center
         .con-head.col
             span(style='color: #e7f4ed') Feel&nbsp;
             | Free 
@@ -24,9 +24,9 @@ div(data-aos="fade-up").container
             a(href='https://medium.com/siesgstarena')
                 i.icon-item.fa.size.fa-medium(aria-hidden='true')
 
-    .row.align-items-center
+    div(data-aos="fade-in").row.align-items-center
         .col-lg-7.col-md-12.col-sm-12.col-12.order-md-last.order-first.order-sm-first.order-md-first.order-lg-last
-            include ../../static/image/contact.svg
+            img(src='./image/contact.svg')
 
         .con-mail-phone.col.order-md-first.order-last.order-sm-last.order-md-last.order-lg-first
             a(href="mailto:codechef@siesgst.ac.in")
