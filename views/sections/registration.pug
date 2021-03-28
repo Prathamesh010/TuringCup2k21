@@ -7,15 +7,26 @@
 	a.reg-btn(onclick='hideReg()') Register Now!<br />
 	i.fa.fa-2x.fa-chevron-down.arrow(aria-hidden='true')
 
-form.form-cont.container(action='https://docs.google.com/forms/d/e/1FAIpQLSe3w7tJepz8AyCNHmhxhTQQoqSwC32hwTWYerVdgSixbbJS9w/formResponse' style='display: none')
-	
+form.form-cont.container(action="/form" method="POST" enctype="multipart/form-data" style='display: none')
+
 	.item
 		.question
 			span.ques &gt;
 			span.ques Hello! What&apos;s your Name?
 		.reply
 			span.ans $
-			input.ans-input(type='text' name='entry.2092238618' placeholder='First Last')
+			input.ans-input(type='text' name='name' placeholder='First Last')
+		.next-btn
+			input.nxt(type='button' name='next-btn' value='Next' onclick='nql()')
+		i.fa.fa-2x.fa-chevron-down.arrow(aria-hidden='true')
+
+	.item(style='display: none')
+		.question
+			span.ques &gt;
+			span.ques PRN/Roll-No :
+		.reply
+			span.ans $
+			input.ans-input(type='text' name='prn' placeholder='117A1028')
 		.next-btn
 			input.nxt(type='button' name='next-btn' value='Next' onclick='nql()')
 		i.fa.fa-2x.fa-chevron-down.arrow(aria-hidden='true')
@@ -26,7 +37,7 @@ form.form-cont.container(action='https://docs.google.com/forms/d/e/1FAIpQLSe3w7t
 			span.ques Email Address
 		.reply
 			span.ans $
-			input.ans-input(type='email' name='entry.1556369182' placeholder='jon@gmail.com')
+			input.ans-input(type='email' name='email' placeholder='jon@gmail.com')
 		.next-btn
 			input.nxt(type='button' name='next-btn' value='Next' onclick='nql()')
 		i.fa.fa-2x.fa-chevron-down.arrow(aria-hidden='true')
@@ -37,7 +48,7 @@ form.form-cont.container(action='https://docs.google.com/forms/d/e/1FAIpQLSe3w7t
 			span.ques College Name:
 		.reply
 			span.ans $
-			input.ans-input(type='text' name='entry.479301265' placeholder='SIESGST')
+			input.ans-input(type='text' name='college' placeholder='SIESGST')
 		.next-btn
 			input.nxt(type='button' name='next-btn' value='Next' onclick='nql()')
 		i.fa.fa-2x.fa-chevron-down.arrow(aria-hidden='true')
@@ -49,16 +60,16 @@ form.form-cont.container(action='https://docs.google.com/forms/d/e/1FAIpQLSe3w7t
 		.reply
 			//- span.ans $
 			label.radio-label
-				input#ce.input-rad(name='entry.1091102377' type='radio' value='CE' checked='checked')
+				input#ce.input-rad(name='branch' type='radio' value='CE' checked='checked')
 				span.inner-label CE
 			label.radio-label
-				input#it.input-rad(name='entry.1091102377' value='IT' type='radio')
+				input#it.input-rad(name='branch' value='IT' type='radio')
 				span.inner-label IT
 			label.radio-label
-				input#extc.input-rad(name='entry.1091102377' value='EXTC' type='radio')
+				input#extc.input-rad(name='branch' value='EXTC' type='radio')
 				span.inner-label EXTC
 			label.radio-label
-				input#oth.input-rad(name='entry.1091102377' value='Other' type='radio')
+				input#oth.input-rad(name='branch' value='Other' type='radio')
 				span.inner-label Other
 
 		.next-btn
@@ -73,20 +84,33 @@ form.form-cont.container(action='https://docs.google.com/forms/d/e/1FAIpQLSe3w7t
 			//- span.ans $
 			//- input.ans-input(type='text' name='entry.588393791' placeholder='FE')
 			label.radio-label
-				input#fe.input-rad(name='entry.588393791' type='radio' value='FE' checked='checked')
+				input#fe.input-rad(name='year' type='radio' value='FE' checked='checked')
 				span.inner-label FE
 			label.radio-label
-				input#se.input-rad(name='entry.588393791' value='SE' type='radio')
+				input#se.input-rad(name='year' value='SE' type='radio')
 				span.inner-label SE
 			label.radio-label
-				input#te.input-rad(name='entry.588393791' value='TE' type='radio')
+				input#te.input-rad(name='year' value='TE' type='radio')
 				span.inner-label TE
 			label.radio-label
-				input#be.input-rad(name='entry.588393791' value='BE' type='radio')
+				input#be.input-rad(name='year' value='BE' type='radio')
 				span.inner-label BE
+		.next-btn
+			input.nxt(type='button' name='next-btn' value='Next' onclick='nql()')
+		i.fa.fa-2x.fa-chevron-down.arrow(aria-hidden='true')
+
+	.item(style='display: none')
+		.question
+			span.ques &gt;
+			span.ques Upload ScreenShot of Payment:
+		.reply
+			span.ans $
+			input.ans-input(type='file' name='upload' )
+
 		.next-btn
 			input.nxt(type='submit' name='next-btn' value='Submit')
 		i.fa.fa-2x.fa-chevron-down.arrow(aria-hidden='true')
+
 
 script.
 
