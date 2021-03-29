@@ -23,6 +23,10 @@ app.get("/", (req, res) => {
   res.render("index")
 })
 
+app.get('/regsuccess', (req, res) => {
+  res.render('regSuccessful')
+})
+
 app.use("/form", formRoute)
 
 app.listen(PORT, (err) => {
