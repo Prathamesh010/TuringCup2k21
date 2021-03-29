@@ -226,7 +226,7 @@ jQuery(document).ready(function ($) {
           Math.round(distance / timelineComponents["eventsMinLapse"]) + 1
       timelineComponents["timelineEvents"]
         .eq(i)
-        .css("left", distanceNorm * min * 6 + "px")
+        .css("left", distanceNorm * min * 4 + "px")
     }
   }
 
