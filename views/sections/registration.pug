@@ -4,7 +4,7 @@
 	span.ins Pay via Cash or UPI as per your option selected in registration form<br />
 	span.ins Registrations are closed<br />
 	span.ins Receive contest link for Qualifier on 15th February and make your way to the finals<br />
-	a.reg-btn(onclick='hideReg()') Register Now!<br />
+	a(onclick='hideReg()').reg-btn Register Now!<br />
 	i.fa.fa-2x.fa-chevron-down.arrow(aria-hidden='true')
 
 form.form-cont.container(action="/form" method="POST" enctype="multipart/form-data" style='display: none')
@@ -110,34 +110,4 @@ form.form-cont.container(action="/form" method="POST" enctype="multipart/form-da
 		.next-btn
 			input.nxt(type='submit' name='next-btn' value='Submit')
 		i.fa.fa-2x.fa-chevron-down.arrow(aria-hidden='true')
-
-
-script.
-
-	var x = document.getElementsByClassName("reg")[0]
-	var y = document.getElementsByClassName("item")
-	var z = document.getElementsByClassName("form-cont")[0]
-
-	function hideReg() {
-		x.style.display = "none"
-		z.style.display = "flex"
-		y[0].className = "item fade-in-bottom"
-	}
-
-	var count = 0
-	function nql() {
-		count++
-		console.log(y[count - 1])
-		y[count - 1].className = "item fade-out-up"
-		y[count - 1].style.display = "none"
-		y[count].style.display = "flex"
-		y[count].className = "item fade-in-bottom"
-	}
-
-	function pql() {
-		count--
-		y[count + 1].className = "item fade-out-bottom"
-		y[count + 1].style.display = "none"
-		y[count].style.display = "flex"
-		y[count].className = "item fade-in-top"
-	}
+script(src="./js/regJs.js")
