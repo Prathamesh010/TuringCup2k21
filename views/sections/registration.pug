@@ -13,47 +13,15 @@ form.form-cont.container(action="/form" method="POST" enctype="multipart/form-da
 	.item
 		.question
 			span.ques &gt;
-			span.ques Hello! What&apos;s your Name?*
+			span.ques Hello! What&apos;s your Name?
 		.reply
 			span.ans $
 			input.ans-input(type='search' name='name' placeholder='First Last' autocomplete="off")
 		.btns 
-			.prev-btn()
+			.prev-btn(onclick='showReg()')
 				i.fa.fa-angle-left(aria-hidden="true" style="color: #76ec7e")
 				| &nbsp;
-				input.prev(type='button' name='prev-btn' value='Prev' onclick='pql()')
-			.next-btn
-				input.nxt(type='button' name='next-btn' value='Next' onclick='nql()')
-	i.fa.fa-2x.fa-chevron-down.arrow(aria-hidden='true')
-
-	.item(style='display: none')
-		.question
-			span.ques &gt;
-			span.ques PRN/Roll-No :*
-		.reply
-			span.ans $
-			input.ans-input(type='search' name='prn' placeholder='117A1028')
-		.btns 
-			.prev-btn()
-				i.fa.fa-angle-left(aria-hidden="true" style="color: #76ec7e")
-				| &nbsp;
-				input.prev(type='button' name='prev-btn' value='Prev' onclick='pql()')
-			.next-btn
-				input.nxt(type='button' name='next-btn' value='Next' onclick='nql()')
-	i.fa.fa-2x.fa-chevron-down.arrow(aria-hidden='true')
-
-	.item(style='display: none')
-		.question
-			span.ques &gt;
-			span.ques Email Address*
-		.reply
-			span.ans $
-			input.ans-input(type='email' name='email' placeholder='jon@gmail.com')
-		.btns 
-			.prev-btn()
-				i.fa.fa-angle-left(aria-hidden="true" style="color: #76ec7e")
-				| &nbsp;
-				input.prev(type='button' name='prev-btn' value='Prev' onclick='pql()')
+				input.prev(type='button' name='prev-btn' value='Prev' onclick='showReg()')
 			.next-btn
 				input.nxt(type='button' name='next-btn' value='Next' onclick='nql()')
 		i.fa.fa-2x.fa-chevron-down.arrow(aria-hidden='true')
@@ -61,23 +29,55 @@ form.form-cont.container(action="/form" method="POST" enctype="multipart/form-da
 	.item(style='display: none')
 		.question
 			span.ques &gt;
-			span.ques College Name:*
+			span.ques PRN/Roll-No :
 		.reply
 			span.ans $
-			input.ans-input(type='search' name='college' placeholder='SIESGST')
+			input.ans-input(type='search' name='prn' placeholder='117A1028' autocomplete="off")
 		.btns 
-			.prev-btn()
+			.prev-btn(onclick='pql()')
 				i.fa.fa-angle-left(aria-hidden="true" style="color: #76ec7e")
 				| &nbsp;
-				input.prev(type='button' name='prev-btn' value='Prev' onclick='pql()')
+				input.prev(type='button' name='prev-btn' value='Prev')
 			.next-btn
 				input.nxt(type='button' name='next-btn' value='Next' onclick='nql()')
-	i.fa.fa-2x.fa-chevron-down.arrow(aria-hidden='true')
+		i.fa.fa-2x.fa-chevron-down.arrow(aria-hidden='true')
 
 	.item(style='display: none')
 		.question
 			span.ques &gt;
-			span.ques Branch:*
+			span.ques Email Address:
+		.reply
+			span.ans $
+			input.ans-input(type='email' name='email' placeholder='jon@gmail.com' autocomplete="off")
+		.btns 
+			.prev-btn(onclick='pql()')
+				i.fa.fa-angle-left(aria-hidden="true" style="color: #76ec7e")
+				| &nbsp;
+				input.prev(type='button' name='prev-btn' value='Prev')
+			.next-btn
+				input.nxt(type='button' name='next-btn' value='Next' onclick='nql()')
+		i.fa.fa-2x.fa-chevron-down.arrow(aria-hidden='true')
+
+	.item(style='display: none')
+		.question
+			span.ques &gt;
+			span.ques College Name:
+		.reply
+			span.ans $
+			input.ans-input(type='search' name='college' placeholder='SIESGST' autocomplete="off")
+		.btns 
+			.prev-btn(onclick='pql()')
+				i.fa.fa-angle-left(aria-hidden="true" style="color: #76ec7e")
+				| &nbsp;
+				input.prev(type='button' name='prev-btn' value='Prev')
+			.next-btn
+				input.nxt(type='button' name='next-btn' value='Next' onclick='nql()')
+		i.fa.fa-2x.fa-chevron-down.arrow(aria-hidden='true')
+
+	.item(style='display: none')
+		.question
+			span.ques &gt;
+			span.ques Branch:
 		.reply
 			//- span.ans $
 			label.radio-label
@@ -94,10 +94,10 @@ form.form-cont.container(action="/form" method="POST" enctype="multipart/form-da
 				span.inner-label Other
 
 		.btns 
-			.prev-btn()
+			.prev-btn(onclick='pql()')
 				i.fa.fa-angle-left(aria-hidden="true" style="color: #76ec7e")
 				| &nbsp;
-				input.prev(type='button' name='prev-btn' value='Prev' onclick='pql()')
+				input.prev(type='button' name='prev-btn' value='Prev')
 			.next-btn
 				input.nxt(type='button' name='next-btn' value='Next' onclick='nql()')
 		i.fa.fa-2x.fa-chevron-down.arrow(aria-hidden='true')
@@ -106,7 +106,7 @@ form.form-cont.container(action="/form" method="POST" enctype="multipart/form-da
 	.item(style='display: none')
 		.question
 			span.ques &gt;
-			span.ques Year:*
+			span.ques Year:
 		.reply
 			//- span.ans $
 			//- input.ans-input(type='search' name='entry.588393791' placeholder='FE')
@@ -123,10 +123,10 @@ form.form-cont.container(action="/form" method="POST" enctype="multipart/form-da
 				input#be.input-rad(name='year' value='BE' type='radio')
 				span.inner-label BE
 		.btns 
-			.prev-btn()
+			.prev-btn(onclick='pql()')
 				i.fa.fa-angle-left(aria-hidden="true" style="color: #76ec7e")
 				| &nbsp;
-				input.prev(type='button' name='prev-btn' value='Prev' onclick='pql()')
+				input.prev(type='button' name='prev-btn' value='Prev')
 			.next-btn
 				input.nxt(type='button' name='next-btn' value='Next' onclick='nql()')
 		i.fa.fa-2x.fa-chevron-down.arrow(aria-hidden='true')
@@ -135,16 +135,16 @@ form.form-cont.container(action="/form" method="POST" enctype="multipart/form-da
 	.item(style='display: none')
 		.question
 			span.ques &gt;
-			span.ques Upload ScreenShot of Payment:*
+			span.ques Upload ScreenShot of Payment:
 		.reply
 			span.ans $
 			input.ans-input(type='file' name='upload' )
 
 		.btns 
-			.prev-btn()
+			.prev-btn(onclick='pql()')
 				i.fa.fa-angle-left(aria-hidden="true" style="color: #76ec7e")
 				| &nbsp;
-				input.prev(type='button' name='prev-btn' value='Prev' onclick='pql()')
+				input.prev(type='button' name='prev-btn' value='Prev')
 			.next-btn
 				input.nxt(type='submit' name='next-btn' value='Submit' onclick='nql()')
 

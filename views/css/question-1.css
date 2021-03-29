@@ -48,6 +48,14 @@ button:focus {
   border-bottom: 4px solid #76ec7e;
 }
 
+.prev-btn {
+  z-index: 3;
+}
+
+.prev-btn:hover {
+  cursor: pointer;
+}
+
 .reply > span {
   color: #76ec7e;
 }
