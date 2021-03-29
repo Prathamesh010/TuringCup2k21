@@ -16,7 +16,7 @@ form.form-cont.container(action="/form" method="POST" enctype="multipart/form-da
 			span.ques Hello! What&apos;s your Name?
 		.reply
 			span.ans $
-			input.ans-input(type='text' name='name' placeholder='First Last')
+			input.ans-input(type='search' name='name' placeholder='First Last' autocomplete="off")
 		.next-btn()
 			input.nxt(type='button' name='next-btn' value='Next' onclick='nql()')
 		i.fa.fa-2x.fa-chevron-down.arrow(aria-hidden='true')
@@ -27,7 +27,7 @@ form.form-cont.container(action="/form" method="POST" enctype="multipart/form-da
 			span.ques PRN/Roll-No :
 		.reply
 			span.ans $
-			input.ans-input(type='text' name='prn' placeholder='117A1028')
+			input.ans-input(type='search' name='prn' placeholder='117A1028')
 		.next-btn
 			input.nxt(type='button' name='next-btn' value='Next' onclick='nql()')
 		i.fa.fa-2x.fa-chevron-down.arrow(aria-hidden='true')
@@ -49,7 +49,7 @@ form.form-cont.container(action="/form" method="POST" enctype="multipart/form-da
 			span.ques College Name:
 		.reply
 			span.ans $
-			input.ans-input(type='text' name='college' placeholder='SIESGST')
+			input.ans-input(type='search' name='college' placeholder='SIESGST')
 		.next-btn
 			input.nxt(type='button' name='next-btn' value='Next' onclick='nql()')
 		i.fa.fa-2x.fa-chevron-down.arrow(aria-hidden='true')
@@ -76,6 +76,7 @@ form.form-cont.container(action="/form" method="POST" enctype="multipart/form-da
 		.next-btn
 			input.nxt(type='button' name='next-btn' value='Next' onclick='nql()')
 		i.fa.fa-2x.fa-chevron-down.arrow(aria-hidden='true')
+		input.ans-input(style="display: none;")
 
 	.item(style='display: none')
 		.question
@@ -83,7 +84,7 @@ form.form-cont.container(action="/form" method="POST" enctype="multipart/form-da
 			span.ques Year:
 		.reply
 			//- span.ans $
-			//- input.ans-input(type='text' name='entry.588393791' placeholder='FE')
+			//- input.ans-input(type='search' name='entry.588393791' placeholder='FE')
 			label.radio-label
 				input#fe.input-rad(name='year' type='radio' value='FE' checked='checked')
 				span.inner-label FE
@@ -99,6 +100,7 @@ form.form-cont.container(action="/form" method="POST" enctype="multipart/form-da
 		.next-btn
 			input.nxt(type='button' name='next-btn' value='Next' onclick='nql()')
 		i.fa.fa-2x.fa-chevron-down.arrow(aria-hidden='true')
+		input.ans-input(style="display: none;")
 
 	.item(style='display: none')
 		.question
@@ -109,6 +111,6 @@ form.form-cont.container(action="/form" method="POST" enctype="multipart/form-da
 			input.ans-input(type='file' name='upload' )
 
 		.next-btn
-			input.nxt(type='submit' name='next-btn' value='Submit')
+			input.nxt(type='submit' name='next-btn' value='Submit' onclick='nql()')
 		i.fa.fa-2x.fa-chevron-down.arrow(aria-hidden='true')
 script(src="./js/regJs.js")
