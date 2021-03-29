@@ -19,12 +19,9 @@ const upload = multer({
 
 router.post("/", upload.single("upload"), async (req, res) => {
   const { name, prn, email, college, branch, year } = req.body
-  console.log(req.body)
-  console.log(req.file)
 
   FirebaseUpload(req.file, "paymentImages")
     .then(async (url) => {
-      console.log(url)
       const newResponse = new Response({
         name: name,
         prn: prn,
@@ -43,13 +40,6 @@ router.post("/", upload.single("upload"), async (req, res) => {
       })
       res.end()
     })
-})
-
-router.get("/", (req, res) => {
-  Response.find({}, (err, data) => {
-    if (err) res.send(err)
-    else res.send(data)
-  })
 })
 
 module.exports = router

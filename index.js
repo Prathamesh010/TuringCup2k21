@@ -16,7 +16,6 @@ mongoose.connect(
   { useNewUrlParser: true, useUnifiedTopology: true },
   (err) => {
     if (err) console.log(err)
-    else console.log("Database Connected")
   }
 )
 
@@ -28,5 +27,4 @@ app.use("/form", formRoute)
 
 app.listen(PORT, (err) => {
   if (err) console.log(err)
-  console.log(`Server Listening on Port ${PORT}...`)
 })
