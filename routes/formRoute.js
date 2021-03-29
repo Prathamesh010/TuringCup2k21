@@ -35,7 +35,7 @@ router.post("/", upload.single("upload"), async (req, res) => {
         imageUrl: url,
       })
       await newResponse.save()
-      res.redirect("/")
+      res.redirect("/regsuccess")
     })
     .catch((err) => {
       res.status(200).json({
