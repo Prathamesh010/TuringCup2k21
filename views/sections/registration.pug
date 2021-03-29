@@ -4,7 +4,8 @@
 	span.ins Pay via Cash or UPI as per your option selected in registration form<br />
 	span.ins Registrations are closed<br />
 	span.ins Receive contest link for Qualifier on 15th February and make your way to the finals<br />
-	a(onclick='hideReg()').reg-btn Register Now!<br />
+	a(onclick='hideReg()').reg-btn 
+		div(onclick='hideReg()') Register Now!<br />
 	i.fa.fa-2x.fa-chevron-down.arrow(aria-hidden='true')
 
 form.form-cont.container(action="/form" method="POST" enctype="multipart/form-data" style='display: none')
@@ -16,7 +17,7 @@ form.form-cont.container(action="/form" method="POST" enctype="multipart/form-da
 		.reply
 			span.ans $
 			input.ans-input(type='text' name='name' placeholder='First Last')
-		.next-btn
+		.next-btn()
 			input.nxt(type='button' name='next-btn' value='Next' onclick='nql()')
 		i.fa.fa-2x.fa-chevron-down.arrow(aria-hidden='true')
 

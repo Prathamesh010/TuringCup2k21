@@ -71,11 +71,24 @@ button:focus {
 .nxt {
   letter-spacing: 2px;
   padding: 10px 15px 0px 0px;
-  background: #0f1311;
+  background: transparent;
+  z-index: 3;
   border: none;
   font-size: 30px;
   color: #76ec7e;
   border-right: 4px solid #76ec7e;
+}
+
+.nxt:hover {
+  cursor: pointer;
+}
+
+.next-btn {
+  z-index: 3;
+}
+
+.next-btn:hover {
+  cursor: pointer;
 }
 
 ::placeholder {
