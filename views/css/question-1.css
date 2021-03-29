@@ -76,7 +76,6 @@ button:focus {
   border: none;
   font-size: 30px;
   color: #76ec7e;
-  border-right: 4px solid #76ec7e;
 }
 
 .nxt:hover {
@@ -119,4 +118,21 @@ button:focus {
   ::placeholder {
     font-size: 30px;
   }
+}
+
+.btns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  letter-spacing: 2px;
+  font-size: 30px;
+  border-right: 4px solid #76ec7e;
+}
+
+.prev {
+  background: #0f1311;
+  padding: 10px 15px 0px 0px;
+  outline: none;
+  border: none;
+  color: #76ec7e;
 }
