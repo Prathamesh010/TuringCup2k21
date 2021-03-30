@@ -611,6 +611,26 @@ a:hover {
   .desk {
     margin-top: 1em;
   }
+
+  .swipe-model {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #76ec7e;
+    font-size: 20px;
+  }
+  
+  .schedule-swipe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #76ec7e;
+    font-size: 30px;
+  }
+  
+  .schedule-swipe-img {
+    margin-left: 20px;
+  }
   
   @media (max-width: 990px) {
   }
