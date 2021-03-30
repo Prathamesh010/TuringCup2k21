@@ -3,7 +3,7 @@ div(data-aos="fade-up").reg
 	span.ins Entry fee for participating in Turing Cup 2021 is 
 		span(style="color: #76ec7e") &#x20B9;50<br />
 	span.ins Pay registration fees on this number
-		span(style="color: #76ec7e") &nbsp;9804209211&nbsp;
+		span(style="color: #76ec7e") &nbsp;+91-9920093425&nbsp;
 		| as per your payment method choice.<br />
 	span.ins Registrations are 
 		span(style="color: #76ec7e") OPEN! 
@@ -13,7 +13,7 @@ div(data-aos="fade-up").reg
 		div(onclick='hideReg()') Register Now!<br />
 	i.fa.fa-2x.fa-chevron-down.arrow(aria-hidden='true')
 
-form.form-cont.container(action="/form" method="POST" enctype="multipart/form-data" style='display: none')
+form.form-cont.container(action="https://docs.google.com/forms/d/e/1FAIpQLSeDRDi7jJBtsJ8oFGMBV8i9BmJdA9-iKCq6YnJ16Q6cBatfVQ/formResponse" method="POST" enctype="multipart/form-data" style='display: none')
 
 	.item
 		.question
@@ -21,7 +21,7 @@ form.form-cont.container(action="/form" method="POST" enctype="multipart/form-da
 			span.ques Hello! What&apos;s your Name?
 		.reply
 			span.ans $
-			input.ans-input(type='search' name='name' placeholder='First Last' autocomplete="off")
+			input.ans-input(type='search' name='entry.1490682310' placeholder='First Last' autocomplete="off")
 		.btns 
 			.prev-btn(onclick='showReg()')
 				i.fa.fa-angle-left(aria-hidden="true" style="color: #76ec7e")
@@ -37,7 +37,7 @@ form.form-cont.container(action="/form" method="POST" enctype="multipart/form-da
 			span.ques PRN/Roll-No :
 		.reply
 			span.ans $
-			input.ans-input(type='search' name='prn' placeholder='117A1028' autocomplete="off")
+			input.ans-input(type='search' name='entry.674023101' placeholder='117A1028' autocomplete="off")
 		.btns 
 			.prev-btn(onclick='pql()')
 				i.fa.fa-angle-left(aria-hidden="true" style="color: #76ec7e")
@@ -53,7 +53,7 @@ form.form-cont.container(action="/form" method="POST" enctype="multipart/form-da
 			span.ques Email Address:
 		.reply
 			span.ans $
-			input.ans-input(type='email' name='email' placeholder='jon@gmail.com' autocomplete="off")
+			input.ans-input(type='email' name='entry.1390409659' placeholder='jon@gmail.com' autocomplete="off")
 		.btns 
 			.prev-btn(onclick='pql()')
 				i.fa.fa-angle-left(aria-hidden="true" style="color: #76ec7e")
@@ -69,7 +69,7 @@ form.form-cont.container(action="/form" method="POST" enctype="multipart/form-da
 			span.ques College Name:
 		.reply
 			span.ans $
-			input.ans-input(type='search' name='college' placeholder='SIESGST' autocomplete="off")
+			input.ans-input(type='search' name='entry.1558105705' placeholder='SIESGST' autocomplete="off")
 		.btns 
 			.prev-btn(onclick='pql()')
 				i.fa.fa-angle-left(aria-hidden="true" style="color: #76ec7e")
@@ -86,16 +86,16 @@ form.form-cont.container(action="/form" method="POST" enctype="multipart/form-da
 		.reply
 			//- span.ans $
 			label.radio-label
-				input#ce.input-rad(name='branch' type='radio' value='CE' checked='checked')
+				input#ce.input-rad(name='entry.196002535' type='radio' value='CE' checked='checked')
 				span.inner-label CE
 			label.radio-label
-				input#it.input-rad(name='branch' value='IT' type='radio')
+				input#it.input-rad(name='entry.196002535' value='IT' type='radio')
 				span.inner-label IT
 			label.radio-label
-				input#extc.input-rad(name='branch' value='EXTC' type='radio')
+				input#extc.input-rad(name='entry.196002535' value='EXTC' type='radio')
 				span.inner-label EXTC
 			label.radio-label
-				input#oth.input-rad(name='branch' value='Other' type='radio')
+				input#oth.input-rad(name='entry.196002535' value='Other' type='radio')
 				span.inner-label Other
 
 		.btns 
@@ -116,16 +116,16 @@ form.form-cont.container(action="/form" method="POST" enctype="multipart/form-da
 			//- span.ans $
 			//- input.ans-input(type='search' name='entry.588393791' placeholder='FE')
 			label.radio-label
-				input#fe.input-rad(name='year' type='radio' value='FE' checked='checked')
+				input#fe.input-rad(name='entry.27304183' type='radio' value='FE' checked='checked')
 				span.inner-label FE
 			label.radio-label
-				input#se.input-rad(name='year' value='SE' type='radio')
+				input#se.input-rad(name='entry.27304183' value='SE' type='radio')
 				span.inner-label SE
 			label.radio-label
-				input#te.input-rad(name='year' value='TE' type='radio')
+				input#te.input-rad(name='entry.27304183' value='TE' type='radio')
 				span.inner-label TE
 			label.radio-label
-				input#be.input-rad(name='year' value='BE' type='radio')
+				input#be.input-rad(name='entry.27304183' value='BE' type='radio')
 				span.inner-label BE
 		.btns 
 			.prev-btn(onclick='pql()')
@@ -140,10 +140,10 @@ form.form-cont.container(action="/form" method="POST" enctype="multipart/form-da
 	.item(style='display: none')
 		.question
 			span.ques &gt;
-			span.ques Upload ScreenShot of Payment:
+			span.ques Enter Transaction ID of Payment:
 		.reply
 			span.ans $
-			input.ans-input(type='file' name='upload')
+			input.ans-input(type='text' name='entry.461012999')
 
 		.btns 
 			.prev-btn(onclick='pql()')
