@@ -143,7 +143,7 @@ form.form-cont.container(action="/form" method="POST" enctype="multipart/form-da
 			span.ques Upload ScreenShot of Payment:
 		.reply
 			span.ans $
-			input.ans-input(type='file' name='upload' )
+			input.ans-input(type='file' name='upload')
 
 		.btns 
 			.prev-btn(onclick='pql()')
@@ -151,7 +151,7 @@ form.form-cont.container(action="/form" method="POST" enctype="multipart/form-da
 				| &nbsp;
 				input.prev(type='button' name='prev-btn' value='Prev')
 			.next-btn
-				input.nxt(type='submit' name='next-btn' value='Submit' onclick='nql()')
+				input.nxt(type= 'button' name='next-btn' value='Submit' onclick='submitForm()')
 
 		i.fa.fa-2x.fa-chevron-down.arrow(aria-hidden='true')
 script(src="./js/regJs.js")
